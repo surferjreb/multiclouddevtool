@@ -1,1 +1,9 @@
- 
+ body {
+    background-image: url("../static/images/yoCvXJW-wallpaper-and-background.jpg");
+    text-decoration-color: white;
+   }
+
+button {
+   height: 150px;
+   width: 150px;
+}

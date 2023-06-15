@@ -1,0 +1,13 @@
+github cheatsheet - https://training.github.com/downloads/github-git-cheat-sheet/
+pro git book - https://www.git-scm.com/book/en/v2
+docker docks - https://docs.docker.com/
+docker cheatsheet - https://docs.docker.com/get-started/docker_cheatsheet.pdf
+google cloud docs - https://cloud.google.com/docs/
+kubernetes docs - https://kubernetes.io/docs/home/
+kubectl cheatsheet - https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+AWS Docs - https://docs.aws.amazon.com/index.html
+TerraForm docs - https://developer.hashicorp.com/terraform/docs
+MySql docs - https://dev.mysql.com/doc/refman/8.0/en/
+BootStrap - https://getbootstrap.com/docs/
+MongoDB - https://www.mongodb.com/docs/manual/
+Mdn web docs - https://developer.mozilla.org/en-US/docs/Web
