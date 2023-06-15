@@ -1,0 +1,24 @@
+{
+  "name": "multiclouddevtool",
+  "version": "1.0.0",
+  "description": "A site for multicloud dev information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/surferjreb/multiclouddevtool.git"
+  },
+  "author": "James R E Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surferjreb/multiclouddevtool/issues"
+  },
+  "homepage": "https://github.com/surferjreb/multiclouddevtool#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}
