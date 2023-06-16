@@ -1,9 +1,13 @@
  body {
     background-image: url("../static/images/yoCvXJW-wallpaper-and-background.jpg");
-    text-decoration-color: white;
+    
    }
 
-button {
-   height: 150px;
-   width: 150px;
+.btnMD {
+   height: 100px;
+   width: 100px;
+}
+
+p {
+   text-decoration-color: white;
 }
