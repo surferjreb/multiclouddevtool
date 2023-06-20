@@ -1,5 +1,7 @@
-const gcBtn = document.getElementById('googleCloud');
 const btnGrp = document.getElementById('btnGrp');
+const csGrp = document.getElementById('csGrp');
+const beGrp = document.getElementById('beGrp');
+
 
 // Doc links
 const gitDocs = 'https://git-scm.com/docs';
@@ -25,7 +27,7 @@ const kubectlCs = 'https://kubernetes.io/docs/reference/kubectl/cheatsheet/';
 const gitBook = 'https://www.git-scm.com/book/en/v2';
 
 
-// Event listener for page buttons
+// Event listener for center column Dev Documents
 btnGrp.addEventListener('click', event => {
     if(event !== undefined){
         switch(event.target.id){
@@ -64,10 +66,30 @@ btnGrp.addEventListener('click', event => {
     }
 })
 
+// Listener for Cheat Sheets
+csGrp.addEventListener('click', event => {
+    if(event.target.id !== undefined){
+        switch(event.target.id){
+            case 'gitcs':    window.open(githubCs, '_blank');
+                             break;
+            case 'dcs':      window.open(dockerCs, '_blank');
+                             break;
+            case 'kbs':      window.open(kubectlCs, '_blank');
+                             break;
+            default:         window.open('/');
+                             break;
+        }
+    }
+});
 
-
-// const _docSelect = () => {
-//     console.log('stuff happened');
-// }
-
-
+// Listener for books/Extras
+beGrp.addEventListener('click', event => {
+    if(event.target.id !== undefined){
+        switch(event.target.id){
+            case 'gitBook': window.open(gitBook, '_blank');
+                            break;
+            default:        window.open('/');
+                            break;
+        }
+    }
+});
