@@ -7,11 +7,4 @@ const _getHome = (req, res) => {
     
 }
 
-const _getSupportSite = (button) => {
-
-    console.log();
-    res.redirect('/');
-}
-
 module.exports.getHome = _getHome;
-module.exports.getSupportSite = _getSupportSite

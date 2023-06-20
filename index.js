@@ -17,8 +17,6 @@ app.use(express.urlencoded({ extended:true }));
 
 app.get('/', mainCtl.getHome );
 
-app.post('/', mainCtl.getSupportSite );
-
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
     if(!err.message) err.message = 'Well Fudge!, Things went wrong...';

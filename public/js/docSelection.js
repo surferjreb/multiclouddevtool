@@ -57,7 +57,7 @@ btnGrp.addEventListener('click', event => {
                                 break;
             case 'mySql':       window.open(mySQLDocs, '_blank');
                                 break;
-            case 'gitDoc':     window.open(gitDocs, '_blank');
+            case 'gitDoc':      window.open(gitDocs, '_blank');
                                 break;
             default:            console.log('oh no!!!');
                                 window.open('/');
@@ -74,7 +74,7 @@ csGrp.addEventListener('click', event => {
                              break;
             case 'dcs':      window.open(dockerCs, '_blank');
                              break;
-            case 'kbs':      window.open(kubectlCs, '_blank');
+            case 'kbcs':      window.open(kubectlCs, '_blank');
                              break;
             default:         window.open('/');
                              break;
