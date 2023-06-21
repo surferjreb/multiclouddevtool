@@ -26,6 +26,8 @@ const kubectlCs = 'https://kubernetes.io/docs/reference/kubectl/cheatsheet/';
 // books and other
 const gitBook = 'https://www.git-scm.com/book/en/v2';
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // Event listener for center column Dev Documents
 btnGrp.addEventListener('click', event => {

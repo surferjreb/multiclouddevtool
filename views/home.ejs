@@ -1,7 +1,7 @@
 <% layout('layouts/boilerplate') %>
     <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col-sm-3" id="csGrp">
+        <div class="row m-2">
+            <div class="col-sm-2" id="csGrp">
                 <p class="display-6 text-light">Cheat Sheets</p>
                 <div class="row">
                     <span class="border border-bottom border-info"></span>
@@ -12,66 +12,123 @@
                     <button class="btn btn-dark" type="input" id="kbcs">kubectl Cheat Sheet</button>
                 </div>
             </div>
-            <div class="col-lg-6" id="btnGrp" >
+            <div class="col-lg-8" id="btnGrp" >
                 <div class="row align-items-center">
-                    <div class="col mb-4 text-center">
+                    <div class="col m-4 text-center">
                         <p class="display-4 text-light">MultiCloud Dev Tool</p>
                         <p class="display-5 text-light">Documentation</p>
                     </div>
                 </div>
-                <div class="row align-items-center m-5">
+                <div class="row align-items-center p-3 m-2 gx-5 gy-5">
                     <div class="col">
-                        <input type="image" class="btn btn-outline-light btnMD" id="googleCloud" name="googleCloud" src="static/images/icons8-google-cloud-144.png">
+                        <input type="image" class="btn btn-outline-light btnMD" id="googleCloud" name="googleCloud" src="static/images/icons8-google-cloud-144.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Google Cloud">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-success btnMD" id="aws" name="aws" src="static/images/aws_logo_dark.png">
+                        <input type="image" class="btn btn-outline-success btnMD" id="aws" name="aws" src="static/images/aws_logo_dark.png" 
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="AWS Cloud Docs">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-info btnMD" id="azure" name="azure" src="static/images/Azure.png">
-                    </div>
-                </div>
-                <div class="row align-items-center m-5">
-                    <div class="col">
-                        <input type="image" class="btn btn-outline-light btnMD" id="kb" name="kb" src="static/images/kb.png">
+                        <input type="image" class="btn btn-outline-info btnMD" id="azure" name="azure" src="static/images/Azure.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Azure Cloud Docs">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-secondary btnMD" id="dockerdocs" name="dockerdocs" src="static/images/dockerlogo.png">
-                    </div>
-                    <div class="col">
-                        <input type="image" class="btn btn-outline-info btnMD" id="terraform" name="terrform" src="static/images/terraform.png">
+                        <input type="image" class="btn btn-outline-light btnMD" id="kb" name="kb" src="static/images/kb.png" 
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Kubernetes Docs">
                     </div>
                     
                 </div>
-                <div class="row align-items-center m-5">
+                <div class="row align-items-center p-3 m-2 gx-5 gy-5">
                     <div class="col">
-                        <input type="image" class="btn btn-info btnMD" id="mdnWeb" name="mdnWeb" src="static/images/mdn-seeklogo.com.png">
+                        <input type="image" class="btn btn-outline-secondary btnMD" id="dockerdocs" name="dockerdocs" src="static/images/dockerlogo.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Docker Docs">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-success btnMD" id="nodeDocs" name="nodeDocs" src="static/images/nodejs.png">
+                        <input type="image" class="btn btn-outline-info btnMD" id="terraform" name="terrform" src="static/images/terraform.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Terraform Docs">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-light btnMD" id="expressDocs" name="expressDocs" src="static/images/Express.png">
+                        <input type="image" class="btn btn-light btnMD" id="mdnWeb" name="mdnWeb" src="static/images/mdn-logo.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="MDN Docs">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-danger btnMD" id="angularDocs" name="angularDocs" src="static/images/angular.png">
+                        <input type="image" class="btn btn-outline-success btnMD" id="nodeDocs" name="nodeDocs" src="static/images/nodejs.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Nodejs Docs">
+                    </div>
+                    
+                </div>
+                <div class="row align-items-center p-3 m-2 gx-5 gy-5">
+                   
+                    <div class="col">
+                        <input type="image" class="btn btn-outline-dark btnMD" id="expressDocs" name="expressDocs" src="static/images/express.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Express Docs">
+                    </div>
+                    <div class="col">
+                        <input type="image" class="btn btn-outline-danger btnMD" id="angularDocs" name="angularDocs" src="static/images/angular.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Angular Docs">
+                    </div>
+                    <div class="col">
+                        <input type="image" class="btn btn-outline-dark btnMD" id="reactDocs" name="reactDocs" src="static/images/react.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="React Docs">
+                    </div>
+                    <div class="col">
+                        <input type="image" class="btn btn-outline-dark btnMD" id="mongoDB" name="mongoDB" src="static/images/MongoDB_Logomark_White.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="MongoDB Docs">
                     </div>
                 </div>
-                <div class="row align-items-center m-5">
+                <div class="row align-items-center p-3 m-2 gx-5 gy-5">
+                    
                     <div class="col">
-                        <input type="image" class="btn btn-outline-dark btnMD" id="reactDocs" name="reactDocs" src="static/images/react.png">
+                        <input type="image" class="btn btn-light btnMD" id="mySql" name="mySql" src="static/images/includes-mysql-125x64.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="MySql Docs">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-dark btnMD" id="mongoDB" name="mongoDB" src="static/images/MongoDB_White.png">
+                        <input type="image" class="btn btn-outline-danger btnMD" id="gitDoc" name="gitDoc" src="static/images/Git-Icon-White.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Git Docs">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-light btnMD" id="mySql" name="mySql" src="static/images/includes-mysql-125x64.png">
+                        <input type="hidden" class="btn btn-outline-danger btnMD" id="gitDoc" name="gitDoc" src="static/images/Git-Logo-White-Full.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Google Cloud">
                     </div>
                     <div class="col">
-                        <input type="image" class="btn btn-outline-danger btnMD" id="gitDoc" name="gitDoc" src="static/images/Git-Logo-White-Full.png">
+                        <input type="hidden" class="btn btn-outline-danger btnMD" id="gitDoc" name="gitDoc" src="static/images/Git-Logo-White-Full.png"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Google Cloud">
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3" id="beGrp">
+            <div class="col-sm-2" id="beGrp">
                 <div class="col">
                     <p class="display-6 text-light">Books/Extra</p>
                     <div class="row">

@@ -5,12 +5,17 @@
 
 
 .btnMD {
-   height: 80px;
-   width: 115px;
+   height: 100px;
+   width: 125px;
 }
 
 
 p {
    text-decoration-color: white;
 }
+
+.custom-tooltip {
+   --bs-tooltip-bg: var(--bs-primary);
+ }
+ 
 
